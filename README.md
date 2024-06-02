@@ -1,43 +1,85 @@
+
 # Insta Bot v2
 
-<!--Remove the below lines and add yours -->
+This Python script serves as an Instagram Uploading Bot that takes YouTube short links and uploads them to an Instagram account with media.
 
-This Python script serves as a Insta Uploading Bot & its takes youtube short link upload them to insta account with a media.
+## Features
 
-### Features
+- Automatically fetches YouTube short links.
+- Downloads the corresponding media.
+- Uploads the media to the specified Instagram account.
 
-Config: insta account info Fully Secured
-Tweet: Insta reel with text and media
-thumbnail Generator: It converts media into a picture
-No Ip chnager requided.
+## Prerequisites
 
-### Prerequisites
-* instagrapi
-* pytube
+- Python 3.6 or later
+- Required Python packages (listed in `requirements.txt`)
 
-### How to run the script
+## Installation
 
-<!--Remove the below lines and add yours -->
+1. Clone the repository:
 
+    ```bash
+    git clone https://github.com/milliyin/insta-bot.git
+    cd insta-bot
+    ```
+
+2. Install the required packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Configure the bot:
+
+    - Update the `config.py` file with your Instagram credentials and any other necessary settings.
+
+## Configuration
+
+Open `config.py` and set the following parameters:
+
+- `username`: Your Instagram username.
+- `password`: Your Instagram password.
+- `upload_text`: Your Post Caption
+
+Example `config.py`:
+
+```python
+username = 'your_username'
+password = 'your_password'
+upload_text = "Caption Text"
 ```
-$ python main.py
+
+## Usage
+
+Run the bot by executing `main.py`:
+
+```bash
+python main.py
 ```
 
-### Screenshot/GIF showing the sample use of the script
+The script will:
 
-<!--Remove the below lines and add yours -->
+1. Fetch the YouTube short links specified in `config.py`.
+2. Download the corresponding media.
+3. Upload the media to your Instagram account.
 
-![input_image](Output.png)
-### Important Files
+## Contributing
 
-config.py: Configuration file containing account info.
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/fooBar`).
+3. Commit your changes (`git commit -am 'Add some fooBar'`).
+4. Push to the branch (`git push origin feature/fooBar`).
+5. Create a new Pull Request.
 
-## Working
+## License
 
-This Python script integrates with Instagram and YouTube to automate the process of downloading videos from YouTube and uploading them to Instagram. It utilizes the instagrapi library for interacting with Instagram and pytube for handling YouTube downloads.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## _Author Name_
+## Acknowledgments
 
-<!--Remove the below lines and add yours -->
-This script was created by [milliyin](https://github.com/milliyin)
-Feel free to contribute to this project by submitting issues or pull requests.
+- [InstaPy](https://github.com/timgrossmann/InstaPy) for inspiration.
+- [pytube](https://github.com/pytube/pytube) for YouTube media downloading.
+
+## Contact
+
+For any inquiries or support, please open an issue in the GitHub repository.
